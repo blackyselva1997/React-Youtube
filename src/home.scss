@@ -1,0 +1,500 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.6s;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+// login Page
+
+.UI {
+  width: 50%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 40px 0;
+  border-radius: 6px;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .youtube_logo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 60%;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #2b2b9c, #ff00f29d);
+  }
+
+  Button:hover {
+    border: none;
+  }
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #646262 !important;
+}
+
+.css-1b0ve20 > :not(style) {
+  display: flex;
+}
+
+.css-r47a1p-MuiFormControl-root {
+  width: 100%;
+}
+
+// Home LogOut Page
+
+.homePage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .sideNav {
+    width: 20%;
+  }
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  width: 80%;
+  .homeCard {
+    overflow: hidden;
+    a {
+      text-decoration: none;
+    }
+    .home_thump_img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .home_thump_img img:hover {
+      border-radius: 0%;
+    }
+    #home_logo_hed4_para {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      .home_logo_img {
+        width: 20%;
+      }
+      .home_logo_img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+      .home_hed_4_para {
+        width: 75%;
+        h4 {
+          color: #000;
+        }
+        p {
+          color: #646262;
+          font-size: small;
+        }
+      }
+    }
+  }
+  .homeCard:hover {
+    cursor: pointer;
+  }
+}
+
+.homeCard {
+  width: 30% !important;
+}
+
+@media (min-width: 280px) {
+  .homeCard {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .homeCard {
+    width: 40% !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  .homeCard {
+    width: 30% !important;
+  }
+}
+
+// filter Bar
+
+.filterbar-row {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  position: fixed;
+  top: 60px;
+  background: #fff;
+  padding: 10px 0;
+}
+.filterbar-btn {
+  background-color: #f2f2f2 !important;
+  color: black !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  padding: 7px !important;
+}
+.filterbar-btn:hover {
+  background-color: #e6e6e6 !important;
+  box-shadow: none;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  border: 1px solid #f2f2f2 !important;
+  border-radius: 10px !important;
+  background: #f2f2f2 !important;
+  color: #000 !important;
+  min-height: 0 !important;
+  min-width: 50px !important;
+  padding: 7px 14px !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  border: 1px solid #b1adad !important;
+  border-radius: 10px !important;
+  background: #b1adad !important;
+  color: #000 !important;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  gap: 20px;
+}
+
+// PlayVideo 2nd Page
+
+#playVideo {
+  width: 85%;
+  margin: -40px auto auto;
+  .videodiv {
+    width: 100%;
+    video {
+      width: 100%;
+      height: auto;
+    }
+    video:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 280px), (max-width: 280px) {
+  #playVideo {
+    width: 90%;
+    margin: 35px auto auto 10px;
+    .videodiv {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  #playVideo {
+    width: 85%;
+    margin: 35px auto auto;
+    .videodiv {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  #playVideo {
+    margin: -28px auto auto;
+    .videodiv {
+      width: 100%;
+    }
+  }
+}
+
+// Dark mode
+
+body.dark {
+  background-color: #0f0f0f;
+  // Sign in
+  .UI h1 {
+    color: #fff;
+  }
+  .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+    color: #646262;
+  }
+  .UI input {
+    color: #646262;
+  }
+  .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 1px solid #646262;
+  }
+  // .css-i4bv87-MuiSvgIcon-root {
+  //   color: #646262;
+  // }
+  .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+    color: #646262;
+  }
+  // Nav Bar
+  .navbar-container {
+    background: #0f0f0f;
+    .toggle {
+      color: #fff;
+    }
+    .navbar-search-input {
+      outline: #fff;
+      color: #fff;
+      background-color: #0f0f0f;
+    }
+    .navbar-search-icon {
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      color: #fff;
+      outline: #fff;
+    }
+    .navbar-search-card {
+      background: transparent;
+      border: 1px solid #fff;
+    }
+    .navbar-mike,
+    .navbar-cam-icon,
+    .navbar-msg-icon {
+      color: #fff;
+    }
+    .menu-appbar {
+      background-color: #0f0f0f !important;
+    }
+  }
+
+  // filter Bar
+  .filterbar-row {
+    background-color: #0f0f0f;
+  }
+  .css-ptiqhd-MuiSvgIcon-root {
+    color: #fff !important;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    background-color: #ffffff1a !important;
+    color: #b1adad !important;
+    border: transparent !important;
+  }
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    background-color: #fff !important;
+    color: #646262 !important;
+    border: transparent !important;
+  }
+
+  // left Bar
+  .left-nav {
+    background-color: #0f0f0f;
+    .para,
+    .icons {
+      color: #fff;
+    }
+    .home-box .nav-items.active {
+      background-color: #2b2929;
+    }
+  }
+  .nav-title {
+    color: #fff;
+  }
+
+  // Home page
+  .home .homeCard #home_logo_hed4_para .home_hed_4_para h4 {
+    color: #fff;
+  }
+
+  // library
+  .Lib-in .Library-login .LibraryHistory .LibraryDisplay .LibraryLogInName {
+    color: #fff;
+  }
+  .home-box .nav-items.active,
+  .Library-box .nav-items.active,
+  .Explore-box .nav-items.active,
+  .More-box .nav-items.active,
+  .Setting-box .nav-items.active {
+    background-color: #2b2929 !important;
+  }
+  .home-box .nav-items:hover,
+  .Library-box .nav-items:hover,
+  .Explore-box .nav-items:hover,
+  .More-box .nav-items:hover,
+  .Setting-box .nav-items:hover {
+    background-color: #2b2929 !important;
+  }
+  .library-logout .library-logo .icons {
+    color: #fff;
+  }
+  .library-logout .libraryLogTitle {
+    color: #fff;
+  }
+  .library-logout .libraryLogContant {
+    color: #646262;
+  }
+  .Lib-in .Library-login .LibraryHistory .LibraryDisplay .icons {
+    color: #fff;
+  }
+
+  // history
+  .His-in .HistoryLogIn .HistoryLogInTitle {
+    color: #fff;
+  }
+  .His-in .HistoryLogIn .HistoryLogInCon {
+    color: #fff;
+  }
+  .His-in .HistoryLoginRight .HistoryLoginRightTitle {
+    color: #fff;
+  }
+  .His-in .HistoryLoginRight .HistoryLoginRightDisplay .HistoryRadio {
+    color: #646262;
+  }
+  .His-in .HistoryLoginRight .clearHistory .clearHistoryBor .clearHistoryCon {
+    color: #646262;
+  }
+  .His-in .HistoryLoginRight .clearHistory .clearHistoryBor .clearHistoryIcon {
+    color: #fff;
+  }
+  .HisLogged .History-logout .HistoryLogTitle {
+    color: #fff;
+  }
+  .HisLogged .History-logout .HistoryLogContant {
+    color: #646262;
+  }
+  .HisLogged .HistoryLoggedRight .HistoryLoggedRightTitle {
+    color: #fff;
+  }
+  .HisLogged .HistoryLoggedRight .HistoryLoggedRightDisplay .HistoryRadio {
+    color: #646262;
+  }
+  .HisLogged
+    .HistoryLoggedRight
+    .clearHistory
+    .clearHistoryBor
+    .clearHistoryCon {
+    color: #646262;
+  }
+  .HisLogged
+    .HistoryLoggedRight
+    .clearHistory
+    .clearHistoryBor
+    .clearHistoryIcon {
+    color: #fff;
+  }
+  .home-box .log-like,
+  .Library-box .log-like,
+  .Explore-box .log-like,
+  .More-box .log-like,
+  .Setting-box .log-like {
+    color: #646262;
+  }
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    color: #fff;
+  }
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input::placeholder {
+    color: #fff !important;
+  }
+  .His-in .HistoryLogInCom h2 {
+    color: #fff;
+  }
+  .His-in .HistoryLogInCom p {
+    color: #646262;
+  }
+
+  // Details
+  .details-col-2 {
+    color: #fff;
+  }
+  .details-channel-name {
+    h4 {
+      color: #fff;
+    }
+    p {
+      color: #646262;
+    }
+  }
+  #like-count {
+    color: #fff;
+  }
+  #thumbsup {
+    color: #fff;
+  }
+  #thumbsup:hover {
+    color: greenyellow;
+  }
+  #thumbsdown {
+    color: #fff;
+  }
+  #thumbsdown:hover {
+    color: red;
+  }
+  .details-video-description {
+    color: #646262;
+  }
+  .details-comment-count {
+    color: #646262;
+  }
+  #input-with-sx:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .comment-smile {
+    .smile {
+      color: #fff;   
+    }
+  }
+  .comment-cancel Button {
+    background-color: #b1adad;
+    border-radius: 30px;
+  }
+  .details-name {
+    color: #fff;
+  }
+  .details-channel {
+    color: #646262;
+  }
+  .details-ago {
+    color: #fff;
+  }
+  .comment-paras1 {
+    color: #fff;
+  }
+  .comment-paras {
+    input {
+      color: #fff;
+    }
+  }
+}

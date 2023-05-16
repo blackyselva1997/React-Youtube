@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.left-nav {
+  width: 18%;
+  height: 100vh;
+  padding: 12px;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 6px;
+}
+.left-nav::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.left-nav:hover {
+  overflow-y: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-title {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.home-box1 {
+  margin-top: -10px;
+}
+.home-box,
+.Library-box,
+.Explore-box,
+.More-box,
+.Setting-box {
+  margin-right: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+  .nav-items {
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    padding: 8px 10px;
+    transition: all 0.2s ease;
+  }
+  .nav-items.active {
+    background-color: #b1adad;
+  }
+  .nav-items:hover {
+    background-color: #b1adad;
+  }
+  .icons {
+    margin-right: 16px;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+    font-family: "Roboto", "Noto", sans-serif;
+    color: #000000ad;
+  }
+  .para {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    width: auto;
+  }
+  .logged-like {
+    padding: 12px;
+  }
+  .log-like {
+    font-size: 14px;
+  }
+  .log-sign {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    color: rgb(99, 99, 219);
+    border: 1px solid #ccc;
+    border-radius: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+    width: 55%;
+    .log-icon {
+      font-size: 24px;
+      margin-right: 4px;
+    }
+  }
+  .log-sign:hover {
+    background-color: rgb(214, 227, 231, 0.7);
+  }
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  padding: 0 !important;
+}
+.log-sign {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  color: rgb(99, 99, 219);
+  border: 1px solid #ccc;
+  border-radius: 135px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 12px;
+  transition: all 0.2s ease;
+  width: auto;
+  margin: auto;
+}
+.log-icon {
+  font-size: 24px;
+  margin-right: 4px;
+}
+.log-sign:hover {
+  background-color: rgb(214, 227, 231, 0.7);
+}
+//----------leftSideNav-About--------------//
+.nav-about {
+  margin-right: 12px;
+  padding: 12px 0;
+  padding-left: 12px;
+  .about-content {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    word-spacing: 5px;
+  }
+  .about-content1 {
+    color: #909090;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+//---------------reponsive---------------//
+@media (max-width: 576px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .icons {
+    margin-right: 0 !important;
+  }
+  .left-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-bottom: 0;
+  }
+  .home-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .filterbar-row {
+    margin-top: 4px;
+  }
+  .nav-items.active {
+    background-color: transparent !important;
+  }
+  .nav-items:hover {
+    background-color: transparent !important;
+  }
+  .nav-items {
+    width: 20%;
+  }
+  .row {
+    justify-content: center;
+  }
+  .home-box .para {
+    font-size: 12px;
+  }
+  .nav-add {
+    font-size: 30px;
+  }
+  .homePage .sideNav {
+    width: 0;
+  }
+  .homePage {
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) {
+  .d-md-none {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .row {
+    justify-content: center;
+  }
+  .left-nav {
+    min-height: 100vh;
+    width: 12%;
+  }
+  .home-box {
+    margin-right: 0;
+    border-bottom: 0;
+    text-align: center;
+  }
+  .icons {
+    font-size: 26px !important;
+    margin-right: 0 !important;
+  }
+  .para {
+    font-size: 10px !important;
+  }
+  .nav-items.active {
+    background-color: transparent !important;
+  }
+  .nav-items:hover {
+    background-color: transparent !important;
+  }
+}
